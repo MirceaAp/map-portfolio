@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+    [class*='col'] {
+    padding: 1rem;
+    background-color: aqua;
+    border: 2px solid #fff;
+    color: crimson;
+    }
+
+    [class*='row'] {
+    padding: 1rem;
+    background-color: blueviolet;
+    border: 2px solid orangered;
+    color: black;
+    }
+{% endblock %}
+{% block title %}Test Page{% endblock %}
+
+
+
+{% block body %}
+    <div class="py-5">
+        <div class="container text-center">
+            <a href="{% url 'portofolio:home' %}">Home</a>
+        </div>
+        <h1 class="my-5 text-center">let's test!</h1>
+        <div>
+            <h2 class="text-center"> Exemplu 1: container simplu cu 1 rand cu 3 coloane si 1 rand cu 2 coloane</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg">A</div>
+                    <div class="col-md">B</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2 class="text-center"> Exemplu 2: container fluid cu 1 rand cu 3 coloane si 1 rand cu 2 coloane</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm">1</div>
+                    <div class="col-sm">2</div>
+                    <div class="col-sm">3</div>
+                </div>
+                <div class="row">
+                    <div class="col-md">A</div>
+                    <div class="col-md">B</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2 class="text-center"> Exemplu 3: container simplu cu 1 rand cu 1 coloana si 1 sidebar</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">1 coloana</div>
+                    <div class="col-4">1 sidebar</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2 class="text-center"> Exemplu 4: container fluid cu 2 randuri cu cate 1 coloana si 1 sidebar comun</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="row">Marcela</div>
+                        <div class="row">
+                            <div class="col-sm">Vampiru 1</div>
+                            <div class="col-sm">Vampiru 2</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">1 sidebar</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h2 class="text-center"> Exemplu 5: container simplu cu 1 rand cu 12 coloane care se aliniaza cate 12, sau
+                cate 6 sau cate 4 sau cate 3 sau cate 2 sau cate 1 in fctie de dimensiunea lor</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                    <div class="col-xxl-1 col-xl-2 col-lg-3 col-lg-4 col-sm-6 col-xs-12">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In gravida condimentum diam.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
